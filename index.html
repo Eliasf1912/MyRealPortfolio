@@ -1,14 +1,220 @@
 <!DOCTYPE html>
 
-    <html lang="en">
+    <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Creation d'un portfolio">
+        <meta name="keywords" content="portfolio, animation, project, HTML, CSS, JS, gsap">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mon vrai porfolio</title>
+        <link rel="stylesheet" href="./css/index.css">      
+        <!-- Link for using the lottie -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
     </head>
 
     <body>
-        
+
+        <header>
+
+            <i class="bi bi-list Burger"></i>
+
+            <nav>
+
+                <i class="bi bi-list Burger"></i>
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_3vNNXU.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <!-- -------------------------------- SECTION HOME -------------------------------- -->
+
+            <section class="Home">
+
+                <h1>Duver<span>nois</span><br> <span>El</span>ias</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium in architecto praesentium maiores consequatur quasi beatae ipsa veniam corrupti tenetur cum, commodi aliquam qui sed fugit ad eos? Exercitationem repudiandae animi alias quas blanditiis cupiditate vitae distinctio. Voluptas officiis eveniet quis itaque sit inventore, voluptatum provident, ullam ut dolor nisi aliquid ratione rerum voluptatibus et, incidunt eligendi exercitationem. Illum.</p>
+
+                <button>Voir Plus</button>
+
+
+                <article>
+
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+
+                </article>
+
+            </section>
+
+            <!-- -------------------------------- SECTION ABOUT -------------------------------- -->
+
+            <section class="About_first">
+
+                <h2>About</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum sit dignissimos reiciendis distinctio sapiente, maiores natus praesentium dolor fugiat voluptatum dolorum nihil unde omnis at, quasi assumenda neque aperiam? Ad, in animi quod, illo dolorem vel cum ipsum aliquid eligendi corrupti et odio a esse repudiandae atque nam dolore inventore quas temporibus nihil nostrum dolores. Maxime in velit ipsum. Voluptates nam neque voluptatum sapiente eveniet perspiciatis magnam. Repellendus, omnis.</p>
+
+                <!-- Technologies et framework que je connais  -->
+
+                <h3>Technologies</h3>
+
+                <article class="technologies-group">
+
+                    <i class="fa-brands fa-html5"></i>
+                    
+                    <i class="fa-brands fa-css3-alt"></i>
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <i class="fa-brands fa-react"></i>
+
+                </article>
+
+                <h3>Framework</h3>
+
+                <ul>
+                    <li>three.js</li>
+                    <li>Bootstrap</li>
+                    <li>Gsap</li>
+                    <li>Phaser.js</li>
+                </ul>
+
+            </section>
+
+            <!-- -------------------------------- TIMELINE ET PARTIE STAGE/ALTERNANCE  -------------------------------- -->
+
+            <section class="About_second">
+
+                <div class="timeline-container">
+
+                    <article class="timeline-start">
+
+                        <span>E</span>
+
+                    </article>
+
+                    <article class="timeline-date">
+
+                        <h4>2018-2019</h4>
+
+                        <p>bac sti2d</p>
+                        
+                    </article>
+
+                    <article class="timeline-date">
+
+                        <h4>2020-2021</h4>
+
+                        <p>license d'anglais</p>
+                        
+                    </article>
+
+                    <article class="timeline-date">
+                        
+                        <h4>2021-Now</h4>
+
+                        <p>bachelor dévelopement web</p>
+
+                    </article>
+
+                </div>
+
+                <h2>stage/alternance</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus minima vero eius quis eaque. Dolor, quidem nam, quos officiis alias voluptatem error ad eligendi voluptatum perspiciatis saepe atque delectus nemo ratione eaque labore. Laudantium illum reiciendis fugit vitae esse.</p>
+
+                <button>contactez-moi</button>
+
+            </section>
+
+            <!-- -------------------------------- SECTION PROJETS -------------------------------- -->
+
+            <section class="projects">
+
+                <h2>projects</h2>
+
+                <div class="Phaser.js">
+
+                    <h4>Phaser.js</h4>
+
+                    <img src="#" alt="">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, temporibus?</p>
+
+                    <article class="techno-used">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                        <span>Phaser.js</span>
+                        
+                    </article>
+
+                    <button>Visitez-moi</button>
+
+                </div>
+
+            </section>
+
+            <!-- -------------------------------- SECTION CONTACT -------------------------------- -->
+
+            <section class="contact">
+
+                <article class="contact-socials">
+
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-github"></i></span>
+                    <span><i class="fa-brands fa-dribbble"></i></span>
+
+                </article>
+
+                <article class="contact-info">
+
+                    <div>
+
+                        <span><i class="fa-solid fa-paper-plane"></i></span>
+
+                        <p>e.duvernois2016@gmail.com</p>
+                        
+                    </div>
+
+                    <div>
+
+                        <span><i class="fa-solid fa-mobile"></i></span>
+
+                        <p>06 50 77 40 85</p>
+                        
+                    </div>
+
+                </article>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque fuga amet quis assumenda vitae quae? Dolor dolore, expedita perferendis, incidunt rem eius ipsam atque iure, illum doloremque qui consequatur!</p>
+
+                <button>contactez-moi</button>
+
+            </section>
+
+        </main>
+
+        <footer></footer>
+
+        <!-- link for icons (using Fontawesome Icons) -->
+        <script src="https://kit.fontawesome.com/56dfd30af5.js" crossorigin="anonymous"></script>
     </body>
+
 </html>
