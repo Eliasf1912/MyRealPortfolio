@@ -11,42 +11,38 @@
         <link rel="stylesheet" href="./css/index.css">      
         <!-- Link for using the lottie -->
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+        <!-- personal script -->
+        <script src="./js/index.js" defer></script>
     </head>
 
     <body>
 
         <header>
 
-            <i class="bi bi-list Burger"></i>
+            <i class="fa-solid fa-bars-staggered nav-btn-open" id="nav-btn-open"></i>
 
-            <nav>
+            <nav id="nav" class="Hidden">
 
-                <i class="bi bi-list Burger"></i>
+                <i class="fa-solid fa-xmark nav-btn-close" id="nav-btn-close"></i>
 
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About me</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About_first">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
 
-                <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_3vNNXU.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_3vNNXU.json"  speed="1"  loop autoplay></lottie-player>
 
             </nav>
 
-        </header>
+            <section class="Home" id="Home">
 
-        <main>
-
-            <!-- -------------------------------- SECTION HOME -------------------------------- -->
-
-            <section class="Home">
-
-                <h1>Duver<span>nois</span><br> <span>El</span>ias</h1>
+                <h1>Duve<span>rnois</span><br> <span>El</span>ias</h1>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium in architecto praesentium maiores consequatur quasi beatae ipsa veniam corrupti tenetur cum, commodi aliquam qui sed fugit ad eos? Exercitationem repudiandae animi alias quas blanditiis cupiditate vitae distinctio. Voluptas officiis eveniet quis itaque sit inventore, voluptatum provident, ullam ut dolor nisi aliquid ratione rerum voluptatibus et, incidunt eligendi exercitationem. Illum.</p>
 
-                <button>Voir Plus</button>
+                <a href="#"><button>See more</button></a>
 
 
                 <article>
@@ -61,9 +57,17 @@
 
             </section>
 
+        </header>
+
+        <main>
+
+            <!-- -------------------------------- SECTION HOME -------------------------------- -->
+
+           
+
             <!-- -------------------------------- SECTION ABOUT -------------------------------- -->
 
-            <section class="About_first">
+            <section class="About_first" id="About_first">
 
                 <h2>About</h2>
 
@@ -98,7 +102,7 @@
 
             <!-- -------------------------------- TIMELINE ET PARTIE STAGE/ALTERNANCE  -------------------------------- -->
 
-            <section class="About_second">
+            <section class="About_second" id="About_second">
 
                 <div class="timeline-container">
 
@@ -144,7 +148,7 @@
 
             <!-- -------------------------------- SECTION PROJETS -------------------------------- -->
 
-            <section class="projects">
+            <section class="projects" id="projects">
 
                 <h2>projects</h2>
 
@@ -173,7 +177,7 @@
 
             <!-- -------------------------------- SECTION CONTACT -------------------------------- -->
 
-            <section class="contact">
+            <section class="contact" id="contact">
 
                 <article class="contact-socials">
 
