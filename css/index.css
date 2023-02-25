@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+body{
+    width: 100%;
+}
+
 /* ADD OF THE DIFFERENT FONTS */
 
 :root{
@@ -22,7 +26,7 @@
 
     /* Font size */
     --h1: 5rem;
-    --h2: 2rem;
+    --h2: 2.5rem;
     --h3: 1.7rem;
     --button: 1.3rem;
     --Text: 1rem;
@@ -49,6 +53,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    box-shadow: var(--kaki) 0 1px 1px;
 }
 
 header::after{
@@ -198,4 +203,55 @@ lottie-player{
 .Home article a i{
     color: var(--GreenB);
     font-size: 1.5rem;
+}
+
+/* SECTION ABOUT */
+
+.About_first{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--GreenW);
+}
+
+.About_first div{
+    /* border: solid 2px orange; */
+    margin: 4rem 0 2rem 0;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.About_first h2{
+    position: relative;
+    color: var(--GreenB);
+    font-size: var(--h2);
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.About_first div span{
+    background-color: var(--GreenB);
+    width: 80%;
+    height: 4px;
+}
+
+.About_first p{
+    color: var(--White);
+    font-size: var(--Text);
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.About_first h3{
+    color: var(--GreenB);
+    font-size: var(--h3);
+    margin: 2rem 0;
+    text-transform: uppercase;
 }
