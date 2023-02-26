@@ -255,3 +255,161 @@ lottie-player{
     margin: 2rem 0;
     text-transform: uppercase;
 }
+
+
+/* TECHNOLOGIES UTILISEE */
+
+.technologies-group{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+    margin: 1rem 0;
+}
+
+.fa-html5{
+    color: #e34c26;
+    font-size: 4rem;
+}
+
+.fa-css3-alt{
+    color: rgb(20, 135, 236);
+    font-size: 4rem;
+}
+
+.fa-js{
+    color: yellow;
+    font-size: 4rem;
+}
+
+.fa-react{
+    color: rgb(27, 182, 225);
+    font-size: 4rem;
+}
+
+/* FRAMEWORK UTILISEE */
+
+.About_first ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    margin-bottom: 4rem;
+}
+
+.About_first ul li{
+    color: var(--White);
+    font-size: var(--h3);
+}
+
+/* TIMELINE */
+
+.About_second{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--GreenW);
+    box-shadow: var(--kaki) 0 1px 1px;
+}
+
+.timeline-container{
+    width: 3%;
+    height: 800px;
+    background-color: var(--GreenB);
+    position: relative;
+    /* border: var(--kaki) solid 3px; */
+    margin: 10rem 0;
+}
+
+.timeline-date-1{
+    top: 20%;
+    left: 300%;
+    width: 175px;
+    position: relative;
+}
+
+/* Cercle */ 
+
+.timeline-date-1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 12%;
+    left: -46.8%;
+    border-radius: 50%;
+    background-color: var(--GreenB);
+}
+
+.timeline-date-2{
+    top: 50%;
+    left: -1100%;
+    width: fit-content;
+}
+
+/* Cercle */ 
+
+.timeline-date-2::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 12%;
+    left: 118.4%;
+    border-radius: 50%;
+    background-color: var(--GreenB);
+}
+
+.timeline-date-3{
+    top: 80%;
+    left: 300%;
+    width: 205px;
+}
+
+/* Cercle */ 
+
+.timeline-date-3::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 12%;
+    left: -40.8%;
+    border-radius: 50%;
+    background-color: var(--GreenB);
+}
+
+.timeline-container article{
+    position: absolute;
+    display: block;
+    color: var(--White);
+}
+
+.timeline-container article h4{
+    font-size: var(--h2);
+    font-weight: bolder;
+}
+
+.timeline-container article p{
+    font-size: var(--h3);
+    font-weight: lighter;
+}
+
+.timeline-start{
+    background-color: var(--GreenB);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10%;
+    left: -186%;
+    padding: 2rem;
+}
+
+.timeline-start > span {
+    color: var(--Dark_blue);
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+
