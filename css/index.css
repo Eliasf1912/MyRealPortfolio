@@ -10,6 +10,7 @@
 
 body{
     width: 100%;
+    background-color: var(--GreenW);
 }
 
 /* ADD OF THE DIFFERENT FONTS */
@@ -238,7 +239,7 @@ lottie-player{
 
 .About_first div span{
     background-color: var(--GreenB);
-    width: 80%;
+    width: 100%;
     height: 4px;
 }
 
@@ -247,6 +248,7 @@ lottie-player{
     font-size: var(--Text);
     padding: 0 4rem;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .About_first h3{
@@ -308,7 +310,7 @@ lottie-player{
     flex-flow: column nowrap;
     align-items: center;
     background-color: var(--GreenW);
-    box-shadow: var(--kaki) 0 1px 1px;
+    /* box-shadow: var(--kaki) 0 1px 1px; */
 }
 
 .timeline-container{
@@ -317,7 +319,7 @@ lottie-player{
     background-color: var(--GreenB);
     position: relative;
     /* border: var(--kaki) solid 3px; */
-    margin: 10rem 0;
+    margin: 8rem 0 2rem 0;
 }
 
 .timeline-date-1{
@@ -326,6 +328,11 @@ lottie-player{
     width: 175px;
     position: relative;
 }
+
+.timeline-date-1 p{
+    text-align: start !important;
+}
+
 
 /* Cercle */ 
 
@@ -354,7 +361,7 @@ lottie-player{
     height: 60px;
     position: absolute;
     top: 12%;
-    left: 118.4%;
+    left: 118.8%;
     border-radius: 50%;
     background-color: var(--GreenB);
 }
@@ -363,6 +370,10 @@ lottie-player{
     top: 80%;
     left: 300%;
     width: 205px;
+}
+
+.timeline-date-3 p{
+    text-align: start !important;
 }
 
 /* Cercle */ 
@@ -392,6 +403,8 @@ lottie-player{
 .timeline-container article p{
     font-size: var(--h3);
     font-weight: lighter;
+    padding: 0;
+    margin: 0;
 }
 
 .timeline-start{
@@ -412,4 +425,239 @@ lottie-player{
     font-weight: bolder;
 }
 
+.About_second h3{
+    color: var(--GreenB);
+    font-size: var(--h3);
+    margin: 2rem 0;
+    text-transform: uppercase;
+}
 
+.About_second p{
+    color: var(--White);
+    font-size: var(--Text);
+    padding: 0 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.About_second button{
+    background-color: transparent;
+    border: var(--GreenB) 3px solid;
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem;
+    font-size: var(--button);
+    color: var(--GreenB);
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    margin-bottom: 2rem;
+}
+
+.About_second button:hover{
+    color: var(--White);
+    background-color: var(--GreenB);
+}
+
+/* SECTION HOME */
+
+.projects{
+    margin: 4rem 0;
+    /* border: solid 2px red; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--GreenW);
+}
+
+.projects h2{
+    color: var(--GreenB);
+    font-size: var(--h2);
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-bottom: 4rem;
+}
+
+/* MODULE PROJECT */
+
+.Phaser{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: var(--GreenW);
+    box-shadow: var(--kaki) 0 1px 10px;
+    border-radius: 25px;
+    padding: 2rem 1rem;
+    margin: 0 4rem;
+}
+
+.Phaser h4{
+    color: var(--GreenB);
+    text-transform: uppercase;
+    font-size: var(--h3);
+    margin-bottom: 2rem;
+}
+
+.Phaser img{
+    width: 80%;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+}
+
+.Phaser p{
+    color: var(--White);
+    font-size: var(--Text);
+    font-weight: lighter;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.Phaser button{
+    background-color: transparent;
+    border: var(--GreenB) 3px solid;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-size: var(--button);
+    color: var(--GreenB);
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    margin-top: 1rem; 
+}
+
+.Phaser button:hover{
+    color: var(--White);
+    background-color: var(--GreenB);
+}
+
+/*  TECHNO USED FOR THE PROJECT */ 
+
+.techno-used{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--kaki);
+    padding: 1rem;
+    gap: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.techno-used span{
+    color: var(--White);
+    border: solid 3px var(--White);
+    padding: 0.5rem 1rem;
+    font-size: var(--Text);
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+/* SECTION CONTACT */
+
+.contact{
+    margin: 4rem 0;
+    /* border: solid 2px red; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--GreenW);
+}
+
+.contact h2{
+    color: var(--GreenB);
+    font-size: var(--h2);
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.contact-socials{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 20px;
+    border: solid 5px var(--GreenB);
+    padding: 2rem;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.contact-socials a{
+    color: var(--White);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.contact-socials i{
+    border: solid 3px var(--GreenB);
+    padding: 1rem;
+    margin-right: 1rem;
+    color: var(--GreenB);
+    font-size: 2rem;
+    box-shadow: var(--kaki) -8px -8px 1px;
+}
+
+.contact-info{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 20px;
+    border: solid 5px var(--kaki);
+    padding: 2rem;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.contact-info div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info div i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--GreenB);
+    border: var(--GreenB) solid 3px;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.contact-info div p{
+    color: var(--White);
+    font-size: 1.5rem;
+    padding: 0rem;
+}
+
+.contact p{
+    color: var(--White);
+    font-weight: lighter;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact button{
+    background-color: transparent;
+    border: var(--GreenB) 3px solid;
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem;
+    font-size: var(--button);
+    color: var(--GreenB);
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    margin-bottom: 2rem;
+}
+
+.contact button:hover{
+    color: var(--White);
+    background-color: var(--GreenB);
+}
