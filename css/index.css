@@ -13,6 +13,7 @@ body{
     background-color: var(--GreenW);
 }
 
+
 /* ADD OF THE DIFFERENT FONTS */
 
 :root{
@@ -54,6 +55,7 @@ header{
     align-items: center;
     justify-content: center;
     box-shadow: var(--kaki) 0 1px 1px;
+    height: 100vh;
 }
 
 header::after{
@@ -72,7 +74,9 @@ header::after{
     color: var(--GreenB);
     font-size: 2rem;
     cursor: pointer;
-    align-self: start;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 /* NAV VERSION TEL */
@@ -427,6 +431,14 @@ lottie-player{
 
 /* ---------------------------------------- TIMELINE END ---------------------------------------- */
 
+.more{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;   
+}
+
+
 .About_second h3{
     color: var(--GreenB);
     font-size: var(--h3);
@@ -482,7 +494,7 @@ lottie-player{
 
 /* MODULE PROJECT */
 
-.Phaser{
+.project_container{
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
@@ -493,20 +505,20 @@ lottie-player{
     margin: 0 2rem;
 }
 
-.Phaser h4{
+.project_container h4{
     color: var(--GreenB);
     text-transform: uppercase;
     font-size: var(--h3);
     margin-bottom: 2rem;
 }
 
-.Phaser img{
+.project_container img{
     width: 80%;
     margin-bottom: 2rem;
     border-radius: 25px;
 }
 
-.Phaser p{
+.project_container p{
     color: var(--White);
     font-size: var(--Text);
     font-weight: lighter;
@@ -515,7 +527,7 @@ lottie-player{
     margin-bottom: 1rem;
 }
 
-.Phaser button{
+.project_container button{
     background-color: transparent;
     border: var(--GreenB) 3px solid;
     border-radius: 12px;
@@ -528,9 +540,16 @@ lottie-player{
     margin-top: 1rem; 
 }
 
-.Phaser button:hover{
+.project_container button:hover{
     color: var(--White);
     background-color: var(--GreenB);
+}
+
+.project-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /*  TECHNO USED FOR THE PROJECT */ 
@@ -566,6 +585,14 @@ lottie-player{
     align-items: center;
     gap: 50px;
     background-color: var(--GreenW);
+}
+
+.contact_wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
 }
 
 .contact h2{
@@ -637,6 +664,7 @@ lottie-player{
     color: var(--White);
     font-size: 1.5rem;
     padding: 0rem;
+    margin: 0 !important;
 }
 
 .contact p{
@@ -668,7 +696,99 @@ lottie-player{
 
 /* ---------------------------- QUERIES ---------------------------- */
 
-@media screen and (min-width: 850px){
+@media screen and (max-width: 440px){
+    h1{
+        font-size: 2.5rem !important;
+    }
+
+    .tl-date{
+        width: 100%;
+        padding: 30px 40px;
+    }
+    
+    .tl::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--GreenB);
+    }
+    
+    .right{
+        left: 0%;
+    }
+
+    .left::after{
+        left: -15px;
+        top: 39%;
+    }
+
+    .right::before{
+        left: -15px;
+        top: 36%;
+    }
+
+    .contact-info{
+        align-items: center;
+    }
+
+    .contact-info div{
+        flex-flow: column;
+        gap: 10px;
+    }
+
+    .contact-socials{
+        align-items: center;
+    }
+
+    .contact-socials a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    lottie-player{
+        width: 140px; 
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    h1{
+        font-size: 3rem !important;
+    }
+    
+    h2{
+        font-size: 1.7rem !important; 
+    }
+
+    h3{
+        font-size: 1.3rem !important;
+    }
+    
+}
+
+@media screen and (min-width: 850px) and (min-width: 900px){
+
+    .About_second{
+        flex-direction: row;
+        justify-content: space-evenly !important;
+        align-items: baseline;
+    }
+
+    .more{
+        width: 50%;
+    }
+
+    .tl{
+        width: 60%;
+    }
+
+    .tl-date{
+        max-width: 60% !important;
+    }
 
     .nav-btn-open{
         display: none !important;
@@ -738,7 +858,7 @@ lottie-player{
     }  
 
     h2{
-        font-size: 3.5rem !important; 
+        font-size: 3rem !important; 
     }
 
     h3{
@@ -756,80 +876,85 @@ lottie-player{
     button{
         font-size: 1.5rem !important;
     }
-      
+
 }
 
 
-@media screen and (max-width: 590px){
-    h1{
-        font-size: 3rem !important;
-    }
-    
-    h2{
-        font-size: 1.7rem !important; 
+@media screen and (min-width: 900px){
+
+    .container h2{
+        font-size: 24px !important;
     }
 
-    h3{
-        font-size: 1.3rem !important;
-    }
-    
-}
-
-@media screen and (max-width: 440px){
-    h1{
-        font-size: 2.5rem !important;
+    .container P{
+        font-size: 18px !important;
     }
 
-    .tl-date{
-        width: 100%;
-        padding: 30px 40px;
-    }
-    
-    .tl::after{
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: var(--GreenB);
-    }
-    
-    .right{
-        left: 0%;
+    .projects{
+        align-items: start;
+        margin-left: 2rem;
     }
 
-    .left::after{
-        left: -15px;
-        top: 39%;
+    .projects h2{
+        align-self: center !important;
+        margin-bottom: 1rem;
     }
 
-    .right::before{
-        left: -15px;
-        top: 36%;
-    }
-
-    .contact-info{
-        align-items: center;
-    }
-
-    .contact-info div{
-        flex-flow: column;
+    .project_container{
+        width: 70%;
+        margin: 2rem 0 0 0;
         gap: 10px;
     }
 
+    .project-wrapper{
+        justify-content: center;
+        flex-flow: row;
+        align-items: start;
+    }
+
+    .techno-used{
+        border-radius:  0 15px 15px 0;
+        flex-flow: column;
+        margin-top: 5rem;
+        align-items: baseline;
+        width: fit-content;
+    }
+
+    .contact_wrapper{
+        flex-flow: row nowrap;
+        align-items: baseline;
+        gap: 20px;
+        width: 100%;
+        padding: 4rem;
+    }
+
     .contact-socials{
-        align-items: center;
+        width: 50%;
     }
 
-    .contact-socials a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .contact-info{
+        width: 50%;
     }
 
-    lottie-player{
-        width: 140px; 
-        height: 140px;
+    .contact-info div p{
+        font-size: 20px !important;
+    }
+
+    .contact{
+        gap: 10px;
+    }
+
+    .contact p{
+        margin-bottom: 2rem;
+    }
+
+    .contact h2{
+        margin: 2rem 0 0 0;
+    }
+
+    .contact button{
+        font-size: 32px !important;
+        padding: 10px 20px;
     }
 }
+
