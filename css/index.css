@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -47,7 +48,7 @@ header{
     background-image: url(../assets/borale.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 2rem;
+    padding: 4rem 2rem 1rem 2rem;
     position: relative;
     z-index: 1;
     display: flex;
@@ -136,8 +137,6 @@ lottie-player{
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 4rem;
 }
 
 /* TITLE */
@@ -150,6 +149,8 @@ lottie-player{
     margin-left: 1.7rem;
     color: var(--White);
     font-weight: lighter;
+    margin-bottom: 4rem;
+    width: 80%;
 }
 
 .Home h1 span{
@@ -164,6 +165,7 @@ lottie-player{
     color: var(--White);
     text-align: center;
     font-size: 1em;
+    margin-bottom: 3rem;
 }
 
 .Home button{
@@ -179,8 +181,9 @@ lottie-player{
 }
 
 .Home button:hover{
-    color: var(--White);
-    background-color: var(--GreenB);
+    /* color: var(--White); */
+    /* background-color: var(--GreenB); */
+    transform: scale(1.1);
 }
 
 /* SOCIAL MEDIA ---> HOME */ 
@@ -435,7 +438,8 @@ lottie-player{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;   
+    align-items: center;  
+    gap: 20px; 
 }
 
 
@@ -697,8 +701,19 @@ lottie-player{
 /* ---------------------------- QUERIES ---------------------------- */
 
 @media screen and (max-width: 440px){
+    header{
+        background-position: cover;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 440px){
     h1{
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
+    }
+
+    header{
+        padding: 1rem 1.5rem;
     }
 
     .tl-date{
@@ -756,18 +771,167 @@ lottie-player{
 }
 
 @media screen and (max-width: 590px){
+
+    .Home button{
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .header_socials a i{
+        font-size: 40px !important;
+    }
+
+    .container h2{
+        font-size: 22px !important;
+    }
+
+    .container p{
+        font-size: 15px !important;
+    }
+
     h1{
         font-size: 3rem !important;
     }
+
+    p{
+        font-size: 20px !important;
+    }
     
     h2{
-        font-size: 1.7rem !important; 
+        font-size: 2.5rem !important; 
     }
 
     h3{
-        font-size: 1.3rem !important;
+        font-size: 2rem !important;
+    }
+
+    h4{
+        font-size: 35px !important
+    }
+
+    button{
+        font-size: 25px !important;
+    }
+
+    li{
+        font-size: 40px !important;
+    }
+
+    .technologies-group i{
+        font-size: 80px !important;
+    }
+
+}
+
+@media screen and (min-width: 590px){
+
+    .Home button{
+        margin-bottom: 1.5rem !important;
     }
     
+    .header_socials a i{
+        font-size: 40px !important;
+    }
+
+    .container h2{
+        font-size: 30px !important;
+    }
+
+    .container p{
+        font-size: 25px !important;
+    }
+
+    .technologies-group i{
+        font-size: 90px !important;
+    }
+
+    .techno-used span{
+        font-size: 25px !important;
+    }
+
+    li{
+        font-size: 45px !important;
+    }
+
+    h1{
+        font-size: 4rem !important;
+    }
+
+    p{
+        font-size: 23px !important;
+    }
+    
+    h2{
+        font-size: 2.7rem !important; 
+    }
+
+    h3{
+        font-size: 2.3rem !important;
+    }
+
+    h4{
+        font-size: 35px !important
+    }
+
+    button{
+        font-size: 28px !important;
+    }
+
+}
+
+@media screen and (min-width: 650px){
+
+    .Home button{
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .header_socials a i{
+        font-size: 40px !important;
+    }
+
+    .container h2{
+        font-size: 30px !important;
+    }
+
+    .container p{
+        font-size: 25px !important;
+    }
+
+    .technologies-group i{
+        font-size: 90px !important;
+    }
+
+    .techno-used span{
+        font-size: 25px !important;
+    }
+
+    li{
+        font-size: 45px !important;
+    }
+
+    h1{
+        font-size: 4rem !important;
+    }
+
+    p{
+        font-size: 23px !important;
+    }
+    
+    h2{
+        font-size: 2.7rem !important; 
+    }
+
+    h3{
+        font-size: 2.3rem !important;
+    }
+
+    h4{
+        font-size: 35px !important
+    }
+
+    button{
+        font-size: 28px !important;
+    }
+
 }
 
 @media screen and (min-width: 850px) and (min-width: 900px){
@@ -798,6 +962,12 @@ lottie-player{
         display: none !important;
     }
 
+    header{
+        gap: 40px;
+        justify-content:space-around;
+        padding: 3rem 2rem;
+    }
+
     nav{
         position: initial !important;
         padding: 4rem;
@@ -811,7 +981,6 @@ lottie-player{
         transition: none;
         box-shadow: none;
         padding: 0 !important;
-        margin-bottom: 5rem !important;
     }
 
     nav ul{
@@ -881,9 +1050,58 @@ lottie-player{
 
 
 @media screen and (min-width: 900px){
+    
+    header{
+        padding-top: 3rem !important;
+    }
+
+    .header_socials a i{
+        font-size: 35px !important;
+    }
+
+    .Home{
+        gap: 0px !important;
+    }
+
+    p{
+        font-size: 23px !important;
+    }
+
+    button{
+        font-size: 30px !important;
+    }
+
+    .Home h1{
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+        margin-left: 2.3rem !important;
+    }
+
+    .Home p{
+        font-size: 28px !important;
+        margin-bottom: 3rem !important;
+    }
+
+    nav ul li a{
+        font-size: 25px !important;
+    }
+
+    header{
+        justify-content: flex-start;
+        padding: 3rem 2rem;
+        gap: 20px !important;
+    }
+    
+    .contact-info div p {
+        font-size: 19px !important;
+    }
+
+    .Home{
+        margin-top: 3rem;
+    }
 
     .container h2{
-        font-size: 24px !important;
+        font-size: 25px !important;
     }
 
     .container P{
@@ -936,10 +1154,6 @@ lottie-player{
         width: 50%;
     }
 
-    .contact-info div p{
-        font-size: 20px !important;
-    }
-
     .contact{
         gap: 10px;
     }
@@ -958,3 +1172,153 @@ lottie-player{
     }
 }
 
+@media screen and (min-width: 1000px){
+
+    .Home h1{
+        font-size: 6rem !important;
+        margin-bottom: 2rem !important;
+        margin-left: 2.3rem !important;
+    }
+
+    .Home p{
+        font-size: 25px !important;
+        margin-bottom: 3rem !important;
+    }
+
+    nav ul li a{
+        font-size: 28px !important;
+    }
+
+    nav ul{
+        gap: 25px;
+    }
+
+    .header_socials a i{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 28px !important;
+        text-align: center !important;
+        padding: 1rem;
+    }
+
+    button{
+        font-size: 30px !important;
+    }
+
+    .About_first{
+        margin-top: 2rem;
+    }
+
+    .About_first p{
+        margin-top: 2rem;
+    }
+
+    .About_first h2{
+        font-size: 70px !important;
+        width: 40%;
+        text-align: center;
+    }
+
+    .About_first h3{
+        font-size: 35px !important;
+    }
+
+    .technologies-group i{
+        font-size: 100px !important;
+    }
+
+    .Framework ul li{
+        font-size: 40px !important;
+    }
+
+    .About_second{
+        margin-top: 4rem !important;
+    }
+
+    .container h2{
+        font-size: 32px !important;
+    }
+
+    .container p{
+        font-size: 23px !important;
+    }
+
+    .techno-used span{
+        font-size: 25px !important;
+    }
+
+    h4{
+        font-size: 38px !important;
+    }
+
+    .contact-info div p{
+        font-size: 23px !important;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    header{
+        /* border: solid 3px red; */
+        padding-top: 3rem !important;
+    }
+
+    .header_socials a i {
+        font-size: 35px !important;
+    }
+
+    h3{
+        font-size: 40px !important;
+    }
+
+    /* .home{
+       border: solid 3px greenyellow;
+    }  */
+
+    .Home h1{
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+        margin-left: 2.3rem !important;
+        /* border: solid 3px orange; */
+        width: fit-content;
+    }
+
+    .Home p{
+        /* border: solid 3px maroon; */
+        font-size: 25px !important;
+        margin-bottom: 3rem !important;
+    }
+
+    nav ul li a{
+        font-size: 30px !important;
+    }
+
+    .contact-info div p{
+        font-size: 28px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    header{
+        padding: 1.5rem;
+    }
+
+    .Home h1{
+        font-size: 6rem !important;
+        margin-bottom: 2rem !important;
+        margin-left: 2.3rem !important;
+    }
+
+    .Home p{
+        font-size: 28px !important;
+        margin-bottom: 3rem !important;
+    }
+
+    button{
+        font-size: 30px !important;
+    }
+}
